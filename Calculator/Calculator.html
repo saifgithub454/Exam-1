@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Simple Calculator</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="num1">Enter Number 1:</label>
+                    <input type="number" class="form-control" id="num1" placeholder="Enter first number">
+                </div>
+                <div class="form-group">
+                    <label for="num2">Enter Number 2:</label>
+                    <input type="number" class="form-control" id="num2" placeholder="Enter second number">
+                </div>
+                <div class="form-group">
+                    <label for="operation">Select Operation:</label>
+                    <select class="form-control" id="operation">
+                        <option value="add">Addition (+)</option>
+                        <option value="subtract">Subtraction (-)</option>
+                        <option value="multiply">Multiplication (*)</option>
+                        <option value="divide">Division (/)</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="calculate()">Calculate</button>
+                <div class="result mt-3">
+                    Result: <span id="result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="Calculator.js"></script>
+</body>
+</html>
